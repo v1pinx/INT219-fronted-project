@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/resume.css">
+    <title>Build</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="./img/curriculum-vitae.png" alt="">
+            <div>ResumeBuilder</div>
+        </div>
+        <div class="homeBtn">
+            <a href="./index.html">Home</a>
+        </div>
+    </nav>
+
+    <section class="main-container" >
+        <div class="container" >
+            <form action="" class="cv-form" id="cv-form">
+                <div class="about-sc">
+                    <div class="about-h">
+                        <h3>ABOUT SECTION</h3>
+                    </div>
+                    <div class="about-d">
+                        <div class="about-row-1">
+                            <div class="firstName i-s">
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" id="firstName">
+                            </div>
+                            <div class="middleName i-s">
+                                <label for="middleName">Middle Name ( optional )</label>
+                                <input type="text" name="middleName" id="middleName">
+                            </div>
+                            <div class="lastName i-s">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="lastName" id="lastName">
+                            </div>
+                        </div>
+                        <div class="about-row-2">
+                            <div class="yourImage i-s">
+                                <label for="yourImage">Your Image</label>
+                                <input type="file" name="yourImage" id="yourImage" accept="image/png, image/jpeg">
+                            </div>
+                            <div class="designation i-s">
+                                <label for="designation">Designation</label>
+                                <input type="text" name="designation" id="designation">
+                            </div>
+                            <div class="address i-s">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+                        </div>
+                        <div class="about-row-3">
+                            <div class="email i-s">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="phoneNo i-s">
+                                <label for="phoneNo">Phone No</label>
+                                <input type="tel" name="phoneNo" id="phoneNo">
+                            </div>
+                            <div class="summary i-s">
+                                <label for="summary">Summary</label>
+                                <input type="text" name="summary" id="summary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="achieve-sc">
+                    <div class="achieve-h">
+                        <h3>ACHIEVEMENT</h3>
+                    </div>
+                    <div class="achieve-d">
+                        <div class="achieve-row">
+                            <div class="title i-s">
+                                <label for="title">Title</label>
+                                <input type="text" name="title" id="title">
+                            </div>
+                            <div class="description i-s">
+                                <label for="description">Description</label>
+                                <input type="text" name="description" id="description">
+                            </div>
+                        </div>
+                        <button class="plusBtn">+</button>
+                    </div>
+                </div>
+
+                <div class="exp-sc">
+                    <div class="exp-h">
+                        <h3>EXPERIENCE</h3>
+                    </div>
+                    <div class="exp-d">
+                        <div>
+                        <div class="exp-row-1">
+                            <div class="jobTitle i-s">
+                                <label for="jobTitle">Job Title</label>
+                                <input type="text" name="jobTitle" id="jobTitle">
+                            </div>
+                            <div class="company i-s">
+                                <label for="company">Company</label>
+                                <input type="text" name="company" id="company">
+                            </div>
+                            <div class="location i-s">
+                                <label for="location">Location</label>
+                                <input type="text" name="location" id="location">
+                            </div>
+                        </div>
+                        <div class="exp-row-2">
+                            <div class="startDate i-s">
+                                <label for="startDate">Start Date</label>
+                                <input type="date" name="startDate" id="startDate">
+                            </div>
+                            <div class="endDate i-s">
+                                <label for="endDate">End Date</label>
+                                <input type="date" name="endDate" id="endDate">
+                            </div>
+                            <div class="jobDescription i-s">
+                                <label for="jobDescription">Job Description</label>
+                                <input type="text" name="jobDescription" id="jobDescription">
+                            </div>
+                        </div>
+                        </div>
+                        <button class="plusBtn">+</button>
+                    </div>
+                </div>
+
+
+                <div class="edu-sc">
+                    <div class="edu-h">
+                        <h3>EDUCATION</h3>
+                    </div>
+                    <div class="edu-d">
+                        <div>
+                        <div class="edu-row-1">
+                            <div class="school i-s">
+                                <label for="school">School</label>
+                                <input type="text" name="school" id="school">
+                            </div>
+                            <div class="degree i-s">
+                                <label for="company">Degree</label>
+                                <input type="text" name="degree" id="degree">
+                            </div>
+                            <div class="city i-s">
+                                <label for="location">City</label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                        </div>
+                        <div class="edu-row-2">
+                            <div class="startDate2 i-s">
+                                <label for="startDate2">Start Date</label>
+                                <input type="date" name="startDate2" id="startDate2">
+                            </div>
+                            <div class="endDate2 i-s">
+                                <label for="endDate2">End Date</label>
+                                <input type="date" name="endDate2" id="endDate2">
+                            </div>
+                            <div class="eduDescription i-s">
+                                <label for="eduDescription">Edu Description</label>
+                                <input type="text" name="eduDescription" id="eduDescription">
+                            </div>
+                        </div>
+                    </div>
+                        <button class="plusBtn">+</button>
+                    </div>
+                </div>
+
+                <div class="project-sc">
+                    <div class="project-h">
+                        <h3>PROJECTS</h3>
+                    </div>
+                    <div class="project-d">
+                        <div class="project-row">
+                            <div class="projectName i-s">
+                                <label for="projectName">Project Name</label>
+                                <input type="text" name="projectName" id="projectName">
+                            </div>
+                            <div class="projectLink i-s">
+                                <label for="projectLink">Project Link</label>
+                                <input type="text" name="projectLink" id="projectLink">
+                            </div>
+                            <div class="proDes i-s">
+                                <label for="proDes">Project Description</label>
+                                <input type="text" name="proDes" id="proDes">
+                            </div>
+                        </div>
+                        <button class="plusBtn">+</button>
+                    </div>
+                </div>
+
+                <div class="skill-sc">
+                    <div class="skill-h">
+                        <h3>SKILLS</h3>
+                    </div>
+                    <div class="skill-d">
+                        <div class="skill-row">
+                            <div class="skill i-s">
+                                <label for="skill">Skill</label>
+                                <input type="text" name="skill" id="skill">
+                            </div>
+                        </div>
+                        <button class="plusBtn">+</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <script>
+const plusButtons = document.querySelectorAll('.plusBtn');
+
+plusButtons.forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const parentSection = button.parentElement;
+
+        const clonedElement = parentSection.querySelector(':first-child').cloneNode(true);
+
+        clonedElement.querySelectorAll('input').forEach(input => input.value = '');
+
+        const newDiv = document.createElement('div');
+
+        newDiv.appendChild(clonedElement);
+
+        // Create a remove button
+        const removeButton = document.createElement('button');
+        removeButton.textContent = '-';
+        removeButton.classList.add('removeBtn');
+
+        // Add event listener to the remove button
+        removeButton.addEventListener('click', function() {
+            parentSection.removeChild(newDiv);
+        });
+
+        newDiv.appendChild(removeButton);
+
+        parentSection.appendChild(newDiv);
+    });
+});
+
+
+
+
+    </script>
+</body>
+
+</html>

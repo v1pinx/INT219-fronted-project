@@ -1,0 +1,121 @@
+.section2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 20px 0 20px;
+}
+
+.i-h1{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    line-height: 1.75em;
+}
+
+.i-h2{
+    font-size: 34px;
+    font-weight: 650;
+}
+
+.i-p{
+    font-size: 16px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.card-container > div{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.card-1, .card-2{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-1 > img{
+    width: 310px;
+    border-radius: 4px;
+}
+.card-2 > img{
+    width: 310px;
+    border-radius: 4px;
+}
+
+
+.card-b{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.card-p{
+    text-align: left;
+}
+
+
+@media(max-width: 768px){
+    .card-container{
+        flex-direction: column;
+    }
+}
+
+.quote-section{
+    padding: 20vh 20px 15vh 20px;
+}
+
+.quote{
+    font-size: 35px;
+    font-weight: 650;
+}
+
+.about{
+    padding: 0 25px 10vh;
+}
+
+.about-me{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    line-height: 1.75em;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 25px 0 36px 0;
+    padding: 0 20px;
+}
+
+.photo{
+    border-radius: 50%;
+    width: 180px;
+}
+
+.description{
+    font-weight: 550;
+    width: 50%;
+    margin: 35px auto;
+}
+
+
+@media(max-width: 768px){
+    .description{
+        width: 90%;
+    }
+}

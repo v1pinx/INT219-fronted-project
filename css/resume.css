@@ -1,0 +1,240 @@
+/* 
+.about-d{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+
+.navbar{
+    background-color: #1e2532;
+}
+
+.homeBtn a{
+    color: #1e2532;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    /* border-radius: 8px; */
+    padding: 4px 10px;
+}
+
+.homeBtn a:hover{
+    background-color: #1e2532;
+    color: white;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 100px;
+
+}
+
+.container{
+    width: 70vw;
+    
+    padding: 10px;
+}
+.about-row-1, .about-row-2,.about-row-3, .exp-row-1, .exp-row-2, .edu-row-1,.edu-row-2,.project-row, .skill-row{
+    display: flex;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.achieve-row{
+    display: flex;
+    /* justify-content: space; */
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.i-s{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+}
+
+.i-s input {
+    margin-top: 5px;
+    height: 40px;
+    outline: none;
+    padding: 0 10px;
+    color: gray;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+#yourImage{
+    width: 300px !important;
+}
+
+.i-s input[type="file"] {
+    /* width: 300px !important; */
+    margin-top: 5px;
+    height: 40px;
+    outline: none;
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.i-s input[type="file"]::file-selector-button {
+    display: inline-block;
+    margin: 5px;
+    height: 30px;
+    /* padding: 10px; */
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Hide the default file input button */
+
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.i-s label{
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+#yourImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.about-d,.achieve-d,.exp-d, .edu-d, .project-d, .skill-d{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 10px 0;
+    padding: 10px 0 20px 0;
+    font-size: 13px;
+}
+
+
+.about-h, .achieve-h, .exp-h, .edu-h, .project-h, .skill-h{
+    background-color: #1e2532;
+    color: white;
+    height: 35px;
+    display: flex;
+    padding-left: 20px ;
+    /* justify-content: center; */
+    align-items: center;
+    letter-spacing: 4px;
+}
+
+.plusBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px 0 20px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    cursor: pointer;
+
+}
+
+  .plusBtn:hover {
+    background-color: rgb(10, 207, 0);
+    /* border:#1278e6; */
+    border: none;
+    transition: 0.2s ease-in-out;
+    color: white;
+    
+  }
+
+.removeBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px 0 20px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    border: 0.5px solid black;
+    background: #fff;
+    cursor: pointer;
+}
+
+.removeBtn:hover {
+    background-color: red;
+    border: none;
+    transition: 0.2s ease-in-out;
+    color: white;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.input-row {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.animate-in {
+    opacity: 1;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+
+@media(max-width: 1250px){
+    .container{
+        width: 80vw;
+    }
+}
+@media(max-width: 1110px){
+    .container{
+        width: 85vw;
+    }
+}
+@media(max-width: 1045px){
+    .container{
+        width: 90vw;
+    }
+    #yourImage{
+        width: 230px !important;
+    }
+}
+@media(max-width: 830px){
+    .container{
+        width: 95vw;
+    }
+    #yourImage{
+        width: 200px !important;
+    }
+}
+@media(max-width: 780px){
+    .about-row-1, .about-row-2,.about-row-3, .exp-row-1, .exp-row-2, .edu-row-1,.edu-row-2,.project-row, .skill-row,.achieve-row{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .i-s{
+        width: 100%;
+    }
+    #yourImage {
+        width: 100% !important;
+    }
+
+}
