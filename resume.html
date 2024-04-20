@@ -23,7 +23,7 @@
 
     <section class="main-container" >
         <div class="container" >
-            <form action="" class="cv-form" id="cv-form">
+            <form action="/generate-resume" class="cv-form" id="cv-form" method="post">
                 <div class="about-sc">
                     <div class="about-h">
                         <h3>ABOUT SECTION</h3>
@@ -32,7 +32,7 @@
                         <div class="about-row-1">
                             <div class="firstName i-s">
                                 <label for="firstName">First Name</label>
-                                <input type="text" name="firstName" id="firstName">
+                                <input type="text" name="firstName" id="firstName" required>
                             </div>
                             <div class="middleName i-s">
                                 <label for="middleName">Middle Name ( optional )</label>
@@ -40,13 +40,13 @@
                             </div>
                             <div class="lastName i-s">
                                 <label for="lastName">Last Name</label>
-                                <input type="text" name="lastName" id="lastName">
+                                <input type="text" name="lastName" id="lastName" required>
                             </div>
                         </div>
                         <div class="about-row-2">
-                            <div class="yourImage i-s">
-                                <label for="yourImage">Your Image</label>
-                                <input type="file" name="yourImage" id="yourImage" accept="image/png, image/jpeg">
+                            <div class="title i-s">
+                                <label for="designation">Title</label>
+                                <input type="text" name="title" id="title">
                             </div>
                             <div class="designation i-s">
                                 <label for="designation">Designation</label>
@@ -115,12 +115,12 @@
                         </div>
                         <div class="exp-row-2">
                             <div class="startDate i-s">
-                                <label for="startDate">Start Date</label>
-                                <input type="date" name="startDate" id="startDate">
+                                <label for="startYear2">Start Year</label>
+                                <input type="text" name="startYear2" id="startYear2">
                             </div>
                             <div class="endDate i-s">
-                                <label for="endDate">End Date</label>
-                                <input type="date" name="endDate" id="endDate">
+                                <label for="endYear2">End Year</label>
+                                <input type="text" name="endYear2" id="endYear2">
                             </div>
                             <div class="jobDescription i-s">
                                 <label for="jobDescription">Job Description</label>
@@ -154,13 +154,13 @@
                             </div>
                         </div>
                         <div class="edu-row-2">
-                            <div class="startDate2 i-s">
-                                <label for="startDate2">Start Date</label>
-                                <input type="date" name="startDate2" id="startDate2">
+                            <div class="startYear i-s">
+                                <label for="startYear">Start Year</label>
+                                <input type="number" name="startYear" id="startYear">
                             </div>
-                            <div class="endDate2 i-s">
-                                <label for="endDate2">End Date</label>
-                                <input type="date" name="endDate2" id="endDate2">
+                            <div class="endYear i-s">
+                                <label for="endYear">End Year</label>
+                                <input type="number" name="endYear" id="endYear">
                             </div>
                             <div class="eduDescription i-s">
                                 <label for="eduDescription">Edu Description</label>
@@ -209,6 +209,7 @@
                         <button class="plusBtn">+</button>
                     </div>
                 </div>
+                <button type="submit">Download Resume</button>
             </form>
         </div>
     </section>
