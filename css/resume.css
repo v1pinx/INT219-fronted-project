@@ -238,3 +238,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
 }
+
+
+.downloadBtn{
+    color: white;
+    background-color: #1e2532;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    /* border-radius: 8px; */
+    padding: 8px 10px;
+    cursor: pointer;
+}
