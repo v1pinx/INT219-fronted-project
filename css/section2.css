@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 10vh 20px 0 20px;
+    padding: 10vh 20px 10vh 20px;
 }
 
 .i-h1{
@@ -44,6 +44,17 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    transition: 0.3s ease-in-out;
+    border: 2px solid white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.card-1:hover, .card-2:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.461);
+    backdrop-filter: blur(20px);
+    
 }
 
 .card-1 > img{
@@ -75,16 +86,36 @@
 }
 
 .quote-section{
-    padding: 20vh 20px 15vh 20px;
+    background-color: white;
+    position: relative;
+    padding: 15vh 20px 15vh 20px;
+}
+
+.quote-section::before{
+    color: black;
+    content: '\f10e';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .quote{
     font-size: 35px;
+    color: black;
     font-weight: 650;
+    text-shadow: 16px 22px 11px rgba(0, 0, 0, 0.437);
+}
+
+.quote-author{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .about{
-    padding: 0 25px 10vh;
+    padding: 10vh 25px 10vh;
 }
 
 .about-me{
@@ -113,9 +144,25 @@
     margin: 35px auto;
 }
 
+.social-btn{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.github-btn:hover{
+    color:gray;
+}
+.youtube-btn:hover{
+    color: red;
+}
 
 @media(max-width: 768px){
     .description{
         width: 90%;
     }
 }
+
