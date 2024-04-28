@@ -1,21 +1,27 @@
-body{
+body {
     --skyblue: rgb(0, 204, 255);
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-
 .hero {
-    /* background-color: rgb(34, 34, 34); */
     padding: 25vh 0 15vh 0;
-    background: radial-gradient(211.50000000000003% 113.1% at -66.4% 35.9%,#0b014a 39.13195153221485%,rgb(0,73,184) 51.424349881796694%,rgb(50,100,227) 67.59505338573997%, rgb(0, 204, 255) 77.36876020980384%,rgb(110,255,211) 90%,rgb(236,241,56) 100%);
+    background: radial-gradient(
+        211.50000000000003% 113.1% at -66.4% 35.9%,
+        #0b014a 39.13195153221485%,
+        rgb(0, 73, 184) 51.424349881796694%,
+        rgb(50, 100, 227) 67.59505338573997%,
+        rgb(0, 204, 255) 77.36876020980384%,
+        rgb(110, 255, 211) 90%,
+        rgb(236, 241, 56) 100%
+    );
     z-index: -1;
     opacity: 100%;
 }
 
-.welcome-txt{
+.welcome-txt {
     position: relative;
     width: 150px;
     height: 38px;
@@ -24,28 +30,23 @@ body{
     background-color: transparent;
     overflow: hidden;
     border-radius: 22px;
-    
 }
-.welcome-txt:hover::after{
+.welcome-txt:hover::after {
     cursor: pointer;
-    background-color: rgb(46, 44, 44);
+    background-color: #111;
 }
 
-.welcome-txt::before{
-    content: '';
+.welcome-txt::before {
+    content: "";
     position: absolute;
     top: 0px;
     width: 100%;
     height: 100%;
-    background-image: conic-gradient(
-        rgb(255, 255, 255) 120deg,
-        white 360deg
-    );
+    background-image: conic-gradient(rgb(255, 255, 255) 120deg, white 360deg);
     animation: border-animation 4s linear infinite;
-    
 }
-.welcome-txt::after{
-    content: 'WELCOME';
+.welcome-txt::after {
+    content: "WELCOME";
 
     letter-spacing: 3px;
     font-weight: 600;
@@ -55,24 +56,22 @@ body{
     color: white;
     position: absolute;
     inset: 2px;
-    background-color: rgb(0, 0, 0);
+    background-color: #111;
     transition: 0.3s ease-in-out;
-    /* background-image: linear-gradient(to right, #2d69e2, #4f15e2); */
     border-radius: 20px;
-    
 }
 
-@keyframes border-animation{
-    0%{
+@keyframes border-animation {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
 
-
-.hero-text1, .hero-text2{
+.hero-text1,
+.hero-text2 {
     color: white;
     font-size: clamp(55px, 8vw, 130px);
     letter-spacing: -0.04em;
@@ -81,8 +80,7 @@ body{
     padding: 0 15px;
 }
 
-
-.hero-tagline{
+.hero-tagline {
     margin: 20px 0;
     color: rgba(255, 255, 255, 0.7);
     /* position: relative; */
@@ -90,25 +88,23 @@ body{
     top: 21vh;
     width: 100%;
     font-size: clamp(16px, 4vw, 25px);
-    
 }
 
-
-
-.btn{
+.btn {
     margin: 20px 0;
-
 }
 
-.create-resume-btn2{
+.create-resume-btn2 {
     color: white;
     font-size: clamp(14px, 2vw, 25px);
     text-align: center;
-    background-color: black;
-    /* border: solid rgba(255, 255, 255, 0.1) 1px;
-    border-style: solid; */
+    background-color: #111;
     border: none;
-    background: linear-gradient(315deg, rgb(0, 153, 255) 0%, var(--skyblue, rgb(0, 204, 255)) 100%);
+    background: linear-gradient(
+        315deg,
+        rgb(0, 153, 255) 0%,
+        var(--skyblue, rgb(0, 204, 255)) 100%
+    );
     border-radius: 12px;
     box-shadow: inset 0 0 0 0 black;
     /* box-shadow: rgba(0, 0, 0, 0.29) 0px 0.796192px 0.796192px -0.9375px, rgba(0, 0, 0, 0.275) 0px 2.41451px 2.41451px -1.875px, rgba(0, 0, 0, 0.235) 0px 6.38265px 6.38265px -2.8125px, rgba(0, 0, 0, 0.1) 0px 20px 20px -3.75px; */
@@ -117,43 +113,33 @@ body{
     padding: 10px 15px;
 }
 
-.create-resume-btn2:hover{
+.create-resume-btn2:hover {
     box-shadow: inset 210px 0 0 0 black;
     cursor: pointer;
-
 }
 
-
-.resume-template{
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    /* back
-    box-sizing: content-box;
-    
-    border: rgba(255, 255, 255, 0.098)  solid;
-    border-width: 50px 100px; */
+.resume-template {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
     width: 35%;
     border-radius: 10px;
-    /* position: relative; */
 }
 
-
-
-@media(max-width: 800px){
-
-    .hero-tagline{
+@media (max-width: 800px) {
+    .hero-tagline {
         margin: 0;
     }
-    .btn{
+    .btn {
         margin: 0;
     }
-    .resume-template{
+    .resume-template {
         width: 50%;
     }
-    .scroller-text{
+    .scroller-text {
         font-size: 12px;
-      }
-      
-.scroller{
-    max-width: 100%;
-}
+    }
+
+    .scroller {
+        max-width: 100%;
+    }
 }

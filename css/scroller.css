@@ -1,80 +1,79 @@
-
-.scroller{
+.scroller {
     max-width: 60%;
 }
-  .scroller__inner {
+.scroller__inner {
     padding-block: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-  }
-  
-  .scroller[data-animated="true"] {
+}
+
+.scroller[data-animated="true"] {
     overflow: hidden;
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-  }
-  
-  .scroller[data-animated="true"] .scroller__inner {
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+}
+
+.scroller[data-animated="true"] .scroller__inner {
     width: max-content;
     flex-wrap: nowrap;
     animation: scroll var(--_animation-duration, 40s)
-      var(--_animation-direction, forwards) linear infinite;
-  }
-  
-  .scroller[data-direction="right"] {
+        var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
     --_animation-direction: reverse;
-  }
-  
-  .scroller[data-direction="left"] {
+}
+
+.scroller[data-direction="left"] {
     --_animation-direction: forwards;
-  }
-  
-  .scroller[data-speed="fast"] {
+}
+
+.scroller[data-speed="fast"] {
     --_animation-duration: 20s;
-  }
-  
-  .scroller[data-speed="slow"] {
+}
+
+.scroller[data-speed="slow"] {
     --_animation-duration: 60s;
-  }
-  
-  @keyframes scroll {
+}
+
+@keyframes scroll {
     to {
-      transform: translate(calc(-50% - 0.5rem));
+        transform: translate(calc(-50% - 0.5rem));
     }
-  }
-  
-  /* general styles */
-  
-  :root {
+}
+
+/* general styles */
+
+:root {
     --clr-neutral-100: hsl(0, 0%, 100%);
     --clr-primary-100: hsl(205, 15%, 58%);
     --clr-primary-400: hsl(215, 25%, 27%);
     --clr-primary-800: hsl(217, 33%, 17%);
     --clr-primary-900: hsl(218, 33%, 9%);
-  }
-  
+}
 
-  
- 
-  
-  
-  .tag-list li {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.tag-list li {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 500;
     padding: 1rem;
     color: white;
-  }
+}
 
-  .tag-list li:hover {
+.tag-list li:hover {
     color: rgba(255, 255, 255, 0.512);
     cursor: pointer;
-  }
+}
 
-
-  .scroller-text{
+.scroller-text {
     color: white;
     padding: 0 10px;
     font-size: 20px;
-  }
+}

@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/resume.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
     <title>Build</title>
 </head>
 
@@ -21,8 +27,8 @@
         </div>
     </nav>
 
-    <section class="main-container" >
-        <div class="container" >
+    <section class="main-container">
+        <div class="container">
             <form action="/generate-resume" class="cv-form" id="cv-form" method="post">
                 <div class="about-sc">
                     <div class="about-h">
@@ -73,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="achieve-sc">
                     <div class="achieve-h">
                         <h3>ACHIEVEMENT</h3>
@@ -99,34 +105,34 @@
                     </div>
                     <div class="exp-d">
                         <div>
-                        <div class="exp-row-1">
-                            <div class="jobTitle i-s">
-                                <label for="jobTitle">Job Title</label>
-                                <input type="text" name="jobTitle" id="jobTitle">
+                            <div class="exp-row-1">
+                                <div class="jobTitle i-s">
+                                    <label for="jobTitle">Job Title</label>
+                                    <input type="text" name="jobTitle" id="jobTitle">
+                                </div>
+                                <div class="company i-s">
+                                    <label for="company">Company</label>
+                                    <input type="text" name="company" id="company">
+                                </div>
+                                <div class="location i-s">
+                                    <label for="location">Location</label>
+                                    <input type="text" name="location" id="location">
+                                </div>
                             </div>
-                            <div class="company i-s">
-                                <label for="company">Company</label>
-                                <input type="text" name="company" id="company">
+                            <div class="exp-row-2">
+                                <div class="startDate i-s">
+                                    <label for="startYear2">Start Year</label>
+                                    <input type="text" name="startYear2" id="startYear2">
+                                </div>
+                                <div class="endDate i-s">
+                                    <label for="endYear2">End Year</label>
+                                    <input type="text" name="endYear2" id="endYear2">
+                                </div>
+                                <div class="jobDescription i-s">
+                                    <label for="jobDescription">Job Description</label>
+                                    <input type="text" name="jobDescription" id="jobDescription">
+                                </div>
                             </div>
-                            <div class="location i-s">
-                                <label for="location">Location</label>
-                                <input type="text" name="location" id="location">
-                            </div>
-                        </div>
-                        <div class="exp-row-2">
-                            <div class="startDate i-s">
-                                <label for="startYear2">Start Year</label>
-                                <input type="text" name="startYear2" id="startYear2">
-                            </div>
-                            <div class="endDate i-s">
-                                <label for="endYear2">End Year</label>
-                                <input type="text" name="endYear2" id="endYear2">
-                            </div>
-                            <div class="jobDescription i-s">
-                                <label for="jobDescription">Job Description</label>
-                                <input type="text" name="jobDescription" id="jobDescription">
-                            </div>
-                        </div>
                         </div>
                         <button class="plusBtn">+</button>
                     </div>
@@ -139,35 +145,35 @@
                     </div>
                     <div class="edu-d">
                         <div>
-                        <div class="edu-row-1">
-                            <div class="school i-s">
-                                <label for="school">School</label>
-                                <input type="text" name="school" id="school">
+                            <div class="edu-row-1">
+                                <div class="school i-s">
+                                    <label for="school">School</label>
+                                    <input type="text" name="school" id="school">
+                                </div>
+                                <div class="degree i-s">
+                                    <label for="company">Degree</label>
+                                    <input type="text" name="degree" id="degree">
+                                </div>
+                                <div class="city i-s">
+                                    <label for="location">City</label>
+                                    <input type="text" name="city" id="city">
+                                </div>
                             </div>
-                            <div class="degree i-s">
-                                <label for="company">Degree</label>
-                                <input type="text" name="degree" id="degree">
-                            </div>
-                            <div class="city i-s">
-                                <label for="location">City</label>
-                                <input type="text" name="city" id="city">
+                            <div class="edu-row-2">
+                                <div class="startYear i-s">
+                                    <label for="startYear">Start Year</label>
+                                    <input type="number" name="startYear" id="startYear">
+                                </div>
+                                <div class="endYear i-s">
+                                    <label for="endYear">End Year</label>
+                                    <input type="number" name="endYear" id="endYear">
+                                </div>
+                                <div class="eduDescription i-s">
+                                    <label for="eduDescription">Edu Description</label>
+                                    <input type="text" name="eduDescription" id="eduDescription">
+                                </div>
                             </div>
                         </div>
-                        <div class="edu-row-2">
-                            <div class="startYear i-s">
-                                <label for="startYear">Start Year</label>
-                                <input type="number" name="startYear" id="startYear">
-                            </div>
-                            <div class="endYear i-s">
-                                <label for="endYear">End Year</label>
-                                <input type="number" name="endYear" id="endYear">
-                            </div>
-                            <div class="eduDescription i-s">
-                                <label for="eduDescription">Edu Description</label>
-                                <input type="text" name="eduDescription" id="eduDescription">
-                            </div>
-                        </div>
-                    </div>
                         <button class="plusBtn">+</button>
                     </div>
                 </div>
@@ -214,42 +220,63 @@
         </div>
     </section>
 
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
 
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                ResumeBilder Copyright © 2024 - All rights reserved
+            </div>
+        </div>
+    </footer>
     <script>
-const plusButtons = document.querySelectorAll('.plusBtn');
+        
+        const plusButtons = document.querySelectorAll('.plusBtn');
 
-plusButtons.forEach(button => {
-    button.addEventListener('click', function(event) {
-        event.preventDefault();
+        plusButtons.forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
 
-        const parentSection = button.parentElement;
+                const parentSection = button.parentElement;
 
-        const clonedElement = parentSection.querySelector(':first-child').cloneNode(true);
+                const clonedElement = parentSection.querySelector(':first-child').cloneNode(true);
 
-        clonedElement.querySelectorAll('input').forEach(input => input.value = '');
+                clonedElement.querySelectorAll('input').forEach(input => input.value = '');
 
-        const newDiv = document.createElement('div');
+                const newDiv = document.createElement('div');
 
-        newDiv.appendChild(clonedElement);
+                newDiv.appendChild(clonedElement);
 
-        // Create a remove button
-        const removeButton = document.createElement('button');
-        removeButton.textContent = '-';
-        removeButton.classList.add('removeBtn');
+                // Create a remove button
+                const removeButton = document.createElement('button');
+                removeButton.textContent = '-';
+                removeButton.classList.add('removeBtn');
 
-        // Add event listener to the remove button
-        removeButton.addEventListener('click', function() {
-            parentSection.removeChild(newDiv);
+                // Add event listener to the remove button
+                removeButton.addEventListener('click', function () {
+                    parentSection.removeChild(newDiv);
+                });
+
+                newDiv.appendChild(removeButton);
+
+                parentSection.appendChild(newDiv);
+            });
         });
-
-        newDiv.appendChild(removeButton);
-
-        parentSection.appendChild(newDiv);
-    });
-});
-
-
-
 
     </script>
 </body>
