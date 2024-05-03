@@ -22,7 +22,7 @@
     <div class="body">
 <div class="container" id="container">
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="index.html" onsubmit="signin()" >
 			<h1>Sign in</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -33,14 +33,17 @@
 			<input type="email" placeholder="Email" required />
 			<input type="password" placeholder="Password" required />
 			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
+			<button >Sign In</button>
 			<a href="./signup.html" style="font-size: 12px;">Don't have account? <b>Signup</b></a>
-            
 		</form>
 	</div>
 
 </div></div>
 <script>
+
+    function signin(){
+        window.location.href = 'index.html';
+    }
 
 </script>
 </body>
